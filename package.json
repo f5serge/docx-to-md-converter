@@ -1,0 +1,32 @@
+{
+  "name": "docx-to-md-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "docx-to-md": "./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^20.14.9",
+    "commander": "^12.1.0",
+    "image-size": "^1.1.1",
+    "mammoth": "^1.8.0",
+    "ts-node": "^10.9.2",
+    "turndown": "^7.2.0",
+    "typescript": "^5.5.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/image-size": "^0.8.0",
+    "@types/turndown": "^5.0.4",
+    "@types/uuid": "^10.0.0"
+  }
+}
